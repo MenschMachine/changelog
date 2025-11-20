@@ -202,21 +202,3 @@ editing, inspecting, and automating PDF workflows feel first-class for developer
 ---
 
 **What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants.
-
-## Week of November 1, 2025
-
-### Core Platform
-
-**Security**
-- API key encryption for secure storage
-- User authentication mapping
-
-### API
-
-**Security**
-- Anonymous API key issuance
-- IP tracking for API keys
-
----
-
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants.
