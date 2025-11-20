@@ -1,0 +1,6 @@
+git@github.com:MenschMachine/pdfdancer-backend.git
+git@github.com:MenschMachine/pdfdancer-api.git
+git@github.com:MenschMachine/pdfdancer-client-java.git
+git@github.com:MenschMachine/pdfdancer-client-python.git
+git@github.com:MenschMachine/pdfdancer-client-typescript.git
+git@github.com:MenschMachine/pdfdancer-mcp.git
