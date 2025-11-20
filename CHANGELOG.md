@@ -1,5 +1,10 @@
 # PDFDancer Changelog
 
+*Last updated: November 20, 2025*
+
+Follow along with the latest improvements to PDFDancer. We ship updates frequently to make
+editing, inspecting, and automating PDF workflows feel first-class for developers.
+
 ## Week of November 16-22, 2025
 
 ### Core Platform

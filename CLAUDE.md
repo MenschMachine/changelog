@@ -51,6 +51,7 @@ Changelogs are stored in `CHANGELOG.md` at the repository root. When generating 
 **Audience**: Write for PDFDancer users, not developers. Focus on what users can do, not how it was implemented.
 
 **Structure**:
+- start with last updated data and this intro section: "Follow along with the latest improvements to PDFDancer. We ship updates frequently to make editing, inspecting, and automating PDF workflows feel first-class for developers."
 - Start with "Core Platform" section covering backend and API changes
 - Follow with SDK-specific sections (Java, Python, TypeScript)
 - End with MCP server section
