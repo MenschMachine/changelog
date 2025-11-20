@@ -68,6 +68,7 @@ Changelogs are stored in `CHANGELOG.md` at the repository root. When generating 
 - Documentation and examples that help users
 
 **DO NOT Include**:
+- Internals that don't effect the sdk users like (server settings, caching, observability etc.)
 - Internal refactoring or code cleanup
 - CI/CD changes, test infrastructure, or build system updates
 - Internal class/method names unless part of public API

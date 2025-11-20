@@ -1,81 +1,217 @@
 # PDFDancer Changelog
 
-## Week of November 13-20, 2025
+## Week of November 16-22, 2025
 
 ### Core Platform
 
-**Text Processing Improvements**
-- Improved accuracy of text positioning and alignment in extracted content
-- Enhanced paragraph detection to better identify logical text blocks
-- Better handling of complex text layouts and multi-column documents
-- Improved text line editing capabilities with more accurate positioning
+**Text Manipulation**
+- More accurate text positioning and alignment in processed PDFs
+- Better paragraph detection for multi-column documents
+- Edit text lines that contain multiple styled text elements
 
-**Image Support**
-- Enhanced image processing capabilities for better quality and compatibility
-
-**API Performance**
-- Added detailed performance metrics to `/summary` and `/windows` endpoints
-- Improved API reliability and error handling
-- Better handling of edge cases in form field operations
+**Form Fields**
+- Form field validation ensures you're setting the right value types
 
 ### Java SDK (v0.1.8)
 
 **New Features**
-- Select text lines using pattern matching with `selectTextLinesMatching()` and `selectTextLineMatching()`
-- Edit text lines with full fluent builder pattern for easier code
+- Select text lines using pattern matching: `selectTextLinesMatching("pattern")` and `selectTextLineMatching("pattern")`
+- Build text line edits with fluent API for clearer code
 - Delete pages with `page().delete()`
-- Enhanced form field validation with type checks
+- Better Gradle 9.x compatibility
 
-**Improvements**
-- Now supports Java 25
-- Better compatibility with Gradle 9.x
-- Improved method naming: `name()` renamed to `getName()` for consistency
+**API Changes**
+- `name()` method renamed to `getName()` for consistency
 
 **Documentation**
-- Published OpenAPI specification
-- Added API coverage report
+- OpenAPI specification published
+- API coverage report shows what's available
 
 ### Python SDK (v0.2.28)
 
 **New Features**
-- Full text line editing support - modify text content in existing PDFs
-- Change font and color properties on text lines
+- Edit text in existing PDFs by modifying text lines
+- Change fonts and colors on text lines
 
-**Improvements**
-- Better handling of text modifications with font preservation
-- Clearer error messages when attempting unsupported operations
+**Bug Fixes**
+- Text and font properties now preserved correctly during edits
+- Clearer error messages when operations aren't supported
 
 **Documentation**
-- Complete PyPI package metadata for better discoverability
-- Updated README and examples
+- Complete PyPI package information for easier discovery
 
 ### TypeScript SDK (v1.0.22)
 
 **New Features**
-- Introduced `PathBuilder` API for creating vector paths programmatically
-- Added visual debugging helpers for easier development and testing
+- Create vector paths programmatically with the new `PathBuilder` API
+- Visual debugging helpers for development
 
 **Bug Fixes**
-- Fixed page index handling in certain edge cases
-- Improved Node.js environment compatibility
-- Better error handling in browser vs server environments
+- Better handling of page references in complex documents
+- Improved Node.js compatibility
 
 **Documentation**
-- Added visual debugging examples
-- Updated OpenAPI specification
+- Visual debugging examples
+- OpenAPI specification updated
 
 ### MCP Server (v0.1.2)
 
-**Platform Support**
-- Now tested and verified on Node.js 18-25
-- Full Windows and macOS compatibility
-- Support for PowerShell and WSL environments
-
 **Improvements**
-- Easier installation with simplified setup instructions
-- Better cross-platform compatibility
-- Improved tool documentation and search syntax
+- Verified compatibility with Node.js 18-25
+- Full Windows and macOS support
+- Works in PowerShell and WSL environments
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week brought significant improvements to text editing capabilities across all SDKs, enhanced platform compatibility, and better developer tools.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week brought text editing improvements and the new PathBuilder API for creating vector graphics.
+
+## Week of November 9-15, 2025
+
+### Core Platform
+
+**Text Processing**
+- More accurate text positioning and sizing
+- Better text merging for cleaner output
+
+**Vector Graphics**
+- Support for shading fills and gradients
+- Enhanced annotation handling
+- Better line width rendering
+- Support for CMYK colors
+
+**OCR Detection**
+- Automatically detect if a PDF contains OCR'd text
+- Page-level OCR detection
+
+**PDF Features**
+- Support for link annotations
+- Better handling of specialized fonts
+
+**Font Management**
+- API endpoints for managing fonts
+
+### Java SDK (v0.1.4)
+
+**New Features**
+- Select single elements at coordinates: `selectTextLineAt()`, `selectPathAt()`, `selectElementAt()`
+- Automatic retry for failed requests with configurable backoff
+- Graceful handling of rate limits with Retry-After support
+- Enhanced form field type validation
+
+**Documentation**
+- API coverage analysis
+
+### Python SDK (v0.2.24)
+
+**New Features**
+- Automatic retry for network errors
+- Graceful rate limit handling with Retry-After support
+- Select single elements: `selectTextLineAt()`, `selectPathAt()`, `selectElementAt()`
+
+**Configuration**
+- Control retry behavior with `PDFDANCER_RETRY_BACKOFF_FACTOR` environment variable
+
+### TypeScript SDK (v1.0.17)
+
+**New Features**
+- Automatic retry for failed requests with Retry-After support
+- Select single elements: `selectTextLineAt()`, `selectPathAt()`, `selectElementAt()`
+- `ImageBuilder.apply()` method for easier image operations
+
+**Improvements**
+- Better Node.js environment handling
+
+### MCP Server (v0.1.2)
+
+**Major Changes**
+- Focused on PDFDancer SDK documentation only
+- Simplified search with clear syntax guide
+
+**Publishing**
+- Published to npm as `@pdfdancer/mcp-server`
+
+**Documentation**
+- Installation guides for Claude Desktop, Cline, Zed, and Sourcegraph Cody
+- Demo video showing Claude Code integration
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week focused on reliability with automatic retries and rate limiting.
+
+## Week of November 2-8, 2025
+
+### Core Platform
+
+**PDF Metadata**
+- All generated PDFs now include metadata
+- Tenant ID tracking in documents
+
+**Documentation**
+- Coordinate system visualization tool
+- Element selection demonstration tool
+
+### Java SDK (v0.1.2)
+
+**New Features**
+- Configurable retry mechanism for network calls
+- Session management and PDF processing
+
+**Configuration**
+- Default endpoint: https://api.pdfdancer.com
+- Configurable base URLs
+
+**Publishing**
+- Published to Maven Central
+
+### Python SDK (v0.2.22)
+
+**New Features**
+- Automatic retry for network failures
+- Select single elements at coordinates
+
+**Configuration**
+- `PDFDANCER_RETRY_BACKOFF_FACTOR` environment variable
+
+**Bug Fixes**
+- Fixed attribute delegation in TextLineObject
+
+### TypeScript SDK (v1.0.16)
+
+**New Features**
+- Full TypeScript support with type safety
+- Works in browsers and Node.js
+- String file path support
+- Select single elements at coordinates
+
+**Configuration**
+- Default endpoint: https://api.pdfdancer.com
+- Configurable base URLs
+
+### MCP Server (v0.1.0)
+
+**Initial Release**
+- Access PDFDancer SDK documentation through MCP protocol
+- Search documentation and retrieve code samples
+- Compatible with AI assistants
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants.
+
+## Week of November 1, 2025
+
+### Core Platform
+
+**Security**
+- API key encryption for secure storage
+- User authentication mapping
+
+### API
+
+**Security**
+- Anonymous API key issuance
+- IP tracking for API keys
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants.
