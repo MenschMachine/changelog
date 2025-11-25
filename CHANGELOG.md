@@ -1,9 +1,51 @@
 # PDFDancer Changelog
 
-*Last updated: November 20, 2025*
+*Last updated: November 25, 2025*
 
 Follow along with the latest improvements to PDFDancer. We ship updates frequently to make
 editing, inspecting, and automating PDF workflows feel first-class for developers.
+
+## Week of November 23-29, 2025
+
+### Core Platform
+
+**Find and Replace**
+- Find and replace text across PDFs with two replacement modes:
+  - Visual replacement: overlays new text while preserving original structure
+  - True replacement: removes original text completely
+- Supports case-sensitive and case-insensitive searches
+- Preserves font styling and positioning
+
+**PDF Processing**
+- Page orientation now preserved when loading and creating pages
+
+### Java SDK (v0.2.0)
+
+**Breaking Changes**
+- Page numbering is now 1-based instead of 0-based
+- `pageIndex` renamed to `pageNumber` throughout the API
+
+### Python SDK (v0.3.0)
+
+**Breaking Changes**
+- Page numbering is now 1-based instead of 0-based
+- `page_index` renamed to `page_number` throughout the API
+- Removed `line_spacing` option from text line editing
+
+### TypeScript SDK (v2.0.0)
+
+**Breaking Changes**
+- Page numbering is now 1-based instead of 0-based
+- `pageIndex` renamed to `pageNumber` throughout the API
+
+**New Features**
+- Open PDFs directly from file paths: `PDFDancer.open("document.pdf")`
+- Support for `File` and `ArrayBuffer` types in `open()` method
+- Environment variable loading with dotenv support
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week brings a major API version update with 1-based page numbering across all SDKs and a new find-and-replace feature.
 
 ## Week of November 16-22, 2025
 
