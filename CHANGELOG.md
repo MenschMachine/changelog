@@ -1,9 +1,46 @@
 # PDFDancer Changelog
 
-*Last updated: November 25, 2025*
+*Last updated: December 2, 2025*
 
 Follow along with the latest improvements to PDFDancer. We ship updates frequently to make
 editing, inspecting, and automating PDF workflows feel first-class for developers.
+
+## Week of November 30 - December 6, 2025
+
+### Core Platform
+
+**Redaction**
+- Redact sensitive content from PDFs including text, images, paths, and form fields
+- Elements are permanently removed and replaced with placeholder boxes
+- Redact by element ID for precise control over what gets removed
+
+**Text Reflow**
+- Replace text and automatically reflow to fit the original bounds
+- Options for horizontal expansion and vertical scaling
+- Works on both paragraphs and individual text lines
+
+### Java SDK (v0.2.1)
+
+**New Features**
+- Redact content from PDFs: `textLine.redact()`, `image.redact()`, `path.redact()`, `formField.redact()`
+- Select form fields by name: `selectFormFieldByName("fieldName")`
+
+**Improvements**
+- Default HTTP timeout increased to 60 seconds for large documents
+
+### Python SDK (v0.3.1)
+
+**New Features**
+- Redact content from PDFs with `redact()` method on text lines, images, paths, and form fields
+
+### TypeScript SDK (v2.0.1)
+
+**New Features**
+- Redact content from PDFs with `redact()` method on text lines, images, paths, and form fields
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week introduces redaction support across all SDKs and text reflow for automatic text fitting.
 
 ## Week of November 23-29, 2025
 
