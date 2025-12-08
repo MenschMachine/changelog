@@ -1,9 +1,49 @@
 # PDFDancer Changelog
 
-*Last updated: December 2, 2025*
+*Last updated: December 8, 2025*
 
 Follow along with the latest improvements to PDFDancer. We ship updates frequently to make
 editing, inspecting, and automating PDF workflows feel first-class for developers.
+
+## Week of December 7-13, 2025
+
+### Core Platform
+
+**PDF Layers (Optional Content)**
+- Support for Optional Content Groups (OCGs) and layer visibility
+- Preserve layer configurations when processing PDFs
+
+**Annotation Improvements**
+- Better handling of line, polyline, polygon, and link annotations
+- Ink annotations now preserve opacity and border width
+- Popup annotation support
+
+**Form Fields**
+- Improved appearance preservation for checkboxes, push buttons, and radio buttons
+- Better handling of standalone widget annotations
+- Text field appearance restoration
+
+**Fonts & Text**
+- Support for Type0 (CID) fonts with proper encoding
+- Text rendering with stroke line width
+- Improved tiling pattern rendering
+
+### Java SDK (v0.2.2)
+
+No user-facing changes this week.
+
+### Python SDK (v0.3.2)
+
+**Documentation**
+- Updated README with vector paths, redaction, and singular selectors examples
+
+### TypeScript SDK (v2.0.2)
+
+No user-facing changes this week.
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week brings PDF layer support and improved annotation handling.
 
 ## Week of November 30 - December 6, 2025
 
