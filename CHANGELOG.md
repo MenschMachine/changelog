@@ -1,9 +1,52 @@
 # PDFDancer Changelog
 
-*Last updated: December 8, 2025*
+*Last updated: December 16, 2025*
 
 Follow along with the latest improvements to PDFDancer. We ship updates frequently to make
 editing, inspecting, and automating PDF workflows feel first-class for developers.
+
+## Week of December 14-20, 2025
+
+### Core Platform
+
+**Font Handling**
+- Support for embedded TrueType fonts with custom encodings
+- Support for Type 3 fonts with resources dictionary
+- Vertical writing mode support for PDF fonts
+
+**Image & Graphics**
+- Blend mode support in PDF images
+- ExtGState support with alpha/transparency and softmask composition
+- Page rotation transformation handling
+
+**Text Rendering**
+- Improved text positioning with text rise offset
+- Horizontal scaling support for text elements
+- Color state inheritance for Form XObjects
+
+**Annotations**
+- Popup annotation appearance stream preservation
+- Squiggly annotation support from original COS data
+
+### Java SDK (v0.2.2)
+
+**Improvements**
+- Simplified redaction API for better usability
+- Text line assertions now support regex pattern matching
+
+### Python SDK (v0.3.3)
+
+**New Features**
+- Select text lines by regex pattern: `select_text_lines_matching("pattern")`
+
+### TypeScript SDK
+
+**New Features**
+- Batch redact functionality for redacting multiple elements at once
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week brings improved font handling including TrueType and Type 3 support, plus regex pattern matching for text selection.
 
 ## Week of December 7-13, 2025
 
@@ -28,6 +71,12 @@ editing, inspecting, and automating PDF workflows feel first-class for developer
 - Text rendering with stroke line width
 - Improved tiling pattern rendering
 
+**Image Editing**
+- Replace, scale, and rotate images in PDFs
+- Crop images to specific bounds
+- Adjust image opacity
+- Flip images horizontally or vertically
+
 ### Java SDK (v0.2.2)
 
 No user-facing changes this week.
@@ -43,7 +92,7 @@ No user-facing changes this week.
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week brings PDF layer support and improved annotation handling.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week brings PDF layer support, improved annotation handling, and comprehensive image editing capabilities.
 
 ## Week of November 30 - December 6, 2025
 

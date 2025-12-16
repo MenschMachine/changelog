@@ -13,8 +13,8 @@ done
 
 ## Update repositories
 
+Deletes and clones:
+
 ```sh
-for i in `cat submodules.txt `; do 
-  cd `echo $i|sed 's|git.*Machine/\(.*\)\.git|\1|g'` && git pull && cd ..
-done
+./update.sh
 ```
