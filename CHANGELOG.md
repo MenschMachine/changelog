@@ -20,7 +20,7 @@ editing, inspecting, and automating PDF workflows feel first-class for developer
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week improves text handling for international documents and enhances image manipulation.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week improves text handling for international documents and enhances image manipulation.
 
 ## Week of January 12-18, 2026
 
@@ -41,7 +41,7 @@ editing, inspecting, and automating PDF workflows feel first-class for developer
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week brings improved template replacement APIs across all SDKs.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week brings improved template replacement APIs across all SDKs.
 
 ## Week of January 5-11, 2026
 
@@ -82,7 +82,7 @@ editing, inspecting, and automating PDF workflows feel first-class for developer
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week introduces template replacement for dynamic content generation and improves text detection.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week introduces template replacement for dynamic content generation and improves text detection.
 
 ## Week of December 29, 2025 - January 4, 2026
 
@@ -94,7 +94,7 @@ editing, inspecting, and automating PDF workflows feel first-class for developer
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week adds text reflow capabilities for better template replacement results.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week adds text reflow capabilities for better template replacement results.
 
 ## Week of December 22-28, 2025
 
@@ -115,7 +115,7 @@ editing, inspecting, and automating PDF workflows feel first-class for developer
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week adds support for the new `PDFDANCER_API_TOKEN` environment variable across all SDKs.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week adds support for the new `PDFDANCER_API_TOKEN` environment variable across all SDKs.
 
 ## Week of December 15-21, 2025
 
@@ -136,7 +136,7 @@ editing, inspecting, and automating PDF workflows feel first-class for developer
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week introduces image manipulation capabilities across all SDKs.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week introduces image manipulation capabilities across all SDKs.
 
 ## Week of December 14-20, 2025
 
@@ -179,7 +179,7 @@ editing, inspecting, and automating PDF workflows feel first-class for developer
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week brings improved font handling including TrueType and Type 3 support, plus regex pattern matching for text selection.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week brings improved font handling including TrueType and Type 3 support, plus regex pattern matching for text selection.
 
 ## Week of December 7-13, 2025
 
@@ -225,7 +225,7 @@ No user-facing changes this week.
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week brings PDF layer support, improved annotation handling, and comprehensive image editing capabilities.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week brings PDF layer support, improved annotation handling, and comprehensive image editing capabilities.
 
 ## Week of November 30 - December 6, 2025
 
@@ -262,7 +262,7 @@ No user-facing changes this week.
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week introduces redaction support across all SDKs and text reflow for automatic text fitting.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week introduces redaction support across all SDKs and text reflow for automatic text fitting.
 
 ## Week of November 23-29, 2025
 
@@ -304,7 +304,7 @@ No user-facing changes this week.
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week brings a major API version update with 1-based page numbering across all SDKs and a new find-and-replace feature.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week brings a major API version update with 1-based page numbering across all SDKs and a new find-and-replace feature.
 
 ## Week of November 16-22, 2025
 
@@ -369,7 +369,7 @@ No user-facing changes this week.
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week brought text editing improvements and the new PathBuilder API for creating vector graphics.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week brought text editing improvements and the new PathBuilder API for creating vector graphics.
 
 ## Week of November 9-15, 2025
 
@@ -442,7 +442,7 @@ No user-facing changes this week.
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week focused on reliability with automatic retries and rate limiting.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week focused on reliability with automatic retries and rate limiting.
 
 ## Week of November 2-8, 2025
 
@@ -502,4 +502,4 @@ No user-facing changes this week.
 
 ---
 
-**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants.
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript.
