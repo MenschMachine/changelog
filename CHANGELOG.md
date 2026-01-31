@@ -1,9 +1,142 @@
 # PDFDancer Changelog
 
-*Last updated: December 16, 2025*
+*Last updated: January 31, 2026*
 
 Follow along with the latest improvements to PDFDancer. We ship updates frequently to make
 editing, inspecting, and automating PDF workflows feel first-class for developers.
+
+## Week of January 26-31, 2026
+
+### Core Platform
+
+**Text & Paragraph Detection**
+- Better paragraph detection for documents with watermarks and varying font sizes
+- Support for rotated text elements
+
+**Image Manipulation**
+- Scale images while preserving transformations
+- Better position preservation when transforming images
+- Replace images with automatic dimension handling
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week improves text handling for international documents and enhances image manipulation.
+
+## Week of January 12-18, 2026
+
+### Java SDK (v0.2.5)
+
+**New Features**
+- Fluent template replacement API with builder pattern for easier configuration
+
+### Python SDK (v0.3.7)
+
+**New Features**
+- Configure font and color for template replacements
+
+### TypeScript SDK (v2.0.6)
+
+**New Features**
+- Fluent template replacement API with builder pattern
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week brings improved template replacement APIs across all SDKs.
+
+## Week of January 5-11, 2026
+
+### Core Platform
+
+**Template Replacement**
+- Replace placeholder text in PDFs with dynamic content
+- Support for multiple template replacements in a single operation
+- Automatic text reflow for replaced content
+
+**Text & Paragraph Detection**
+- Improved paragraph detection with adaptive line height reference
+- Better handling of multi-column documents
+
+**Word Detection**
+- Enhanced word detection for better text selection
+- Support for complex text spacing with TJ operator expansion
+
+**Font Handling**
+- Improved font encoding and text rendering
+- Better handling of embedded fonts
+- Deduplicate font streams across multi-page PDFs
+
+### Java SDK (v0.2.4)
+
+**New Features**
+- Template replacement API: `applyReplacements()` to replace placeholder text with dynamic content
+
+### Python SDK (v0.3.6)
+
+**New Features**
+- Template replacement: `apply_replacements()` to replace text templates
+
+### TypeScript SDK (v2.0.5)
+
+**New Features**
+- Template replacement API with models for dynamic content
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week introduces template replacement for dynamic content generation and improves text detection.
+
+## Week of December 29, 2025 - January 4, 2026
+
+### Core Platform
+
+**Text Reflow**
+- Automatic text reflow for template replacements
+- Better text fitting for replaced content
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week adds text reflow capabilities for better template replacement results.
+
+## Week of December 22-28, 2025
+
+### Java SDK (v0.2.3)
+
+**Configuration**
+- Support for both `PDFDANCER_API_TOKEN` and `PDFDANCER_TOKEN` environment variables
+
+### Python SDK (v0.3.4)
+
+**Configuration**
+- Support for `PDFDANCER_API_TOKEN` environment variable
+
+### TypeScript SDK (v2.0.4)
+
+**Configuration**
+- Support for `PDFDANCER_API_TOKEN` environment variable with fallback to `PDFDANCER_TOKEN`
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week adds support for the new `PDFDANCER_API_TOKEN` environment variable across all SDKs.
+
+## Week of December 15-21, 2025
+
+### Java SDK (v0.2.3)
+
+**New Features**
+- Image manipulation: get center position with `getCenter()` method
+
+### Python SDK (v0.3.5)
+
+**New Features**
+- Image manipulation capabilities
+
+### TypeScript SDK (v2.0.3)
+
+**New Features**
+- Image transformation features
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript, plus a Model Context Protocol (MCP) server for AI assistants. This week introduces image manipulation capabilities across all SDKs.
 
 ## Week of December 14-20, 2025
 
