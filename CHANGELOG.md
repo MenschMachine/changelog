@@ -1,9 +1,78 @@
 # PDFDancer Changelog
 
-*Last updated: January 31, 2026*
+*Last updated: February 20, 2026*
 
 Follow along with the latest improvements to PDFDancer. We ship updates frequently to make
 editing, inspecting, and automating PDF workflows feel first-class for developers.
+
+## Week of February 16-20, 2026
+
+### Core Platform
+
+**Text Rendering**
+- Fixed character and word spacing calculations for more accurate text positioning
+
+**Template Replacement**
+- Default reflow preset changed to NONE for more predictable template replacement behavior
+- Better error handling when template placeholders are missing
+
+**Images**
+- Fixed image dimensions when adding images to new pages
+
+### Java SDK (v0.2.6)
+
+**New Features**
+- Fill a rectangular region of an image with a solid color using `fillRegion()`
+
+### Python SDK (v0.3.8)
+
+**New Features**
+- Fill a rectangular region of an image with a solid color using `fill_region()`
+
+### TypeScript SDK (v2.0.7)
+
+**New Features**
+- Fill a rectangular region of an image with a solid color using `fillRegion()`
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week adds image fill region support and fixes text spacing accuracy.
+
+## Week of February 9-15, 2026
+
+### Core Platform
+
+**PDF Outlines & Bookmarks**
+- Support for PDF outlines (bookmarks/table of contents) — preserved during processing
+
+**Text Processing**
+- Detect and extract invisible text in PDF paragraphs
+- Improved word spacing in text width calculations
+- Fixed form field widget handling for documents with shared widgets
+
+**Element Ordering**
+- Z-order index management for PDF elements — control the stacking order of text, images, and paths
+
+### Java SDK
+
+**New Features**
+- Access text line font encoding and text content via `TextLineReference`
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week adds PDF outline support, invisible text detection, and element z-order control.
+
+## Week of February 2-8, 2026
+
+### Core Platform
+
+**Font Management**
+- Upload and manage custom fonts for use in template replacements and text editing
+- Automatic cleanup of stale font resources
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week adds custom font management for template replacements.
 
 ## Week of January 26-31, 2026
 
