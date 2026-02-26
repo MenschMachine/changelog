@@ -1,9 +1,48 @@
 # PDFDancer Changelog
 
-*Last updated: February 20, 2026*
+*Last updated: February 26, 2026*
 
 Follow along with the latest improvements to PDFDancer. We ship updates frequently to make
 editing, inspecting, and automating PDF workflows feel first-class for developers.
+
+## Week of February 20-26, 2026
+
+### Core Platform
+
+**Text Fragment Editing**
+- Edit individual text fragments within a line — change font, size, or color on specific parts of a text line
+- Get styled spans from text lines and paragraphs to inspect how text is formatted
+- Split text lines into fragments by attribute for granular control
+
+**Font Swap**
+- Replace fonts in PDFs while preserving text positioning
+- Kerning control for swapped fonts
+
+**Template Replacement**
+- Replace template placeholders with images
+- Improved placeholder positioning accuracy
+
+**Text Rendering**
+- Better width calculation for Type0 (CID) fonts
+
+### Java SDK (v0.2.7)
+
+**New Features**
+- Replace template placeholders with images
+
+### Python SDK (v0.3.9)
+
+**New Features**
+- Replace template placeholders with images
+
+### TypeScript SDK (v2.0.8)
+
+**New Features**
+- Replace template placeholders with images
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week adds text fragment editing for granular style control, font swapping, and image replacement in templates.
 
 ## Week of February 16-20, 2026
 
