@@ -1,9 +1,139 @@
 # PDFDancer Changelog
 
-*Last updated: February 26, 2026*
+*Last updated: April 2, 2026*
 
 Follow along with the latest improvements to PDFDancer. We ship updates frequently to make
 editing, inspecting, and automating PDF workflows feel first-class for developers.
+
+## Week of March 28 - April 2, 2026
+
+### Core Platform
+
+**Text Reflow Improvements**
+- New `findAndReplaceWithReflow` method automatically reflows replaced text using the new V2 engine — text fits within original bounds more reliably
+- NONE reflow strategy added to preserve line structure without any reflowing
+- Better reflow for justified text with improved indent and line spacing detection
+
+**Paragraph & Column Detection**
+- Improved detection of three-column and multi-column layouts
+- Section headings that were detached from their paragraphs are now repaired automatically
+- Better column band detection for complex document layouts
+
+**Word Detection**
+- Improved word boundary detection for better text selection and extraction
+
+**Text Identity**
+- Stable text element IDs across sessions — paragraph references remain consistent when re-opening the same document
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week brings improved text reflow, better multi-column detection, and stable paragraph IDs.
+
+## Week of March 21-27, 2026
+
+### Core Platform
+
+**Text Reflow V2**
+- New reflow engine with text alignment detection (left, right, centered, justified)
+- Improved font substitution for replaced text — better character spacing and glyph matching
+- Multi-column-aware reflow that respects document structure
+- Handles text overflow and edge cases more gracefully
+
+**Recursive Element Replacement**
+- Replace text elements in nested PDF structures (Form XObjects and layered content)
+
+### Java SDK (v0.2.15)
+
+**New Features**
+- Read and write fill and stroke colors on vector paths, with alpha channel support
+
+### Python SDK (v0.3.13)
+
+**New Features**
+- Read and write fill and stroke colors on vector paths, with alpha channel support
+
+### TypeScript SDK (v2.0.16)
+
+**New Features**
+- Read and write fill and stroke colors on vector paths, with alpha channel support
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week introduces a new text reflow engine and path color read/write across all SDKs.
+
+## Week of March 13-20, 2026
+
+### Core Platform
+
+**PDF/A Conformance Preservation**
+- PDF/A documents retain their conformance after processing — ICC color profiles, output intents, XMP metadata, and MarkInfo structures are preserved
+- Font conformance validation ensures embedded fonts meet PDF/A requirements
+- Option to opt out of PDF/A preservation if you need to modify conformance-sensitive content
+
+**Font Improvements**
+- Font name is now resolved from the embedded TTF file metadata for more accurate identification
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week adds PDF/A conformance preservation so processed documents remain standards-compliant.
+
+## Week of March 6-12, 2026
+
+### Core Platform
+
+**Clear Clipping**
+- Remove clipping regions from text lines, paths, and other elements — reveal content that was previously hidden by clipping paths
+- Works across multiple content streams on a page
+
+### Java SDK (v0.2.14)
+
+**New Features**
+- `clearClipping()` on text lines and paths to remove clipping regions
+
+### Python SDK (v0.3.12)
+
+**New Features**
+- `clear_clipping()` on text lines and paths to remove clipping regions
+
+### TypeScript SDK (v2.0.15)
+
+**New Features**
+- `clearClipping()` on text lines and paths to remove clipping regions
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week adds the ability to remove clipping from PDF elements across all SDKs.
+
+## Week of February 27 - March 5, 2026
+
+### Core Platform
+
+**Vector Path Groups**
+- Group related vector paths and transform them as a unit — scale, rotate, and resize groups of paths together
+- Ungroup path groups to work with individual paths again
+- Get bounding box for a group of paths
+
+**Find & Replace**
+- Find and replace text that spans multiple lines
+
+### Java SDK (v0.2.13)
+
+**New Features**
+- Path group management: create groups, scale, rotate, and resize them via API
+
+### Python SDK (v0.3.11)
+
+**New Features**
+- Path grouping and transformation: group paths and apply scale, rotate, and resize operations
+
+### TypeScript SDK (v2.0.14)
+
+**New Features**
+- Path grouping: group related paths and transform them together
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week adds vector path grouping across all SDKs for working with complex graphics as a unit.
 
 ## Week of February 20-26, 2026
 
