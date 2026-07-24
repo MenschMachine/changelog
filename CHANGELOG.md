@@ -31,7 +31,7 @@ editing, inspecting, and automating PDF workflows feel first-class for developer
 - New request-based text editing workflow for replacing, inserting, deleting, and styling text
 - Updated package and installation coordinates for the v3 API
 
-### Python SDK (v3.0.0)
+### Python SDK (v3.0.1)
 
 **API v3**
 - New request-based text editing workflow for replacing, inserting, deleting, and styling text
