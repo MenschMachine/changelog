@@ -1,9 +1,58 @@
 # PDFDancer Changelog
 
-*Last updated: April 2, 2026*
+*Last updated: July 24, 2026*
 
 Follow along with the latest improvements to PDFDancer. We ship updates frequently to make
 editing, inspecting, and automating PDF workflows feel first-class for developers.
+
+## API v3 and Platform Updates (April 3 - July 24, 2026)
+
+### Core Platform
+
+**Request-Based Text Editing**
+- Replace, insert, delete, and style text through focused text-editing requests
+- Choose whether edits stay anchored to the source layout or use reflow when needed
+- Receive match counts, change counts, overflow information, and other edit diagnostics
+- Apply style overrides and replace matched text with images
+
+**Text Layout and Reflow**
+- Improved text reflow for multi-column layouts, lists, whitespace, hyphenation, and justified text
+- Better font substitution and font-swap handling, including warnings when replacement fonts may affect layout
+- More reliable text positioning, caret placement, and handling of text boundaries and whitespace
+
+**PDF and Page Operations**
+- Delete a range of pages in one operation
+- Preserve image placement more reliably during transformations and replacements
+- More robust handling of page dimensions and rotation
+
+### Java SDK (v3.0.0)
+
+**API v3**
+- New request-based text editing workflow for replacing, inserting, deleting, and styling text
+- Updated package and installation coordinates for the v3 API
+
+### Python SDK (v3.0.0)
+
+**API v3**
+- New request-based text editing workflow for replacing, inserting, deleting, and styling text
+- Updated package-root imports and installation instructions for the v3 API
+
+### TypeScript SDK (v3.0.0)
+
+**API v3**
+- New request-based text editing workflow for replacing, inserting, deleting, and styling text
+- Updated package-root imports and installation instructions for the v3 API
+
+### MCP Server
+
+**PDF Workflows from MCP Clients**
+- Upload PDFs, inspect document status and page snapshots, and export processed documents
+- Edit text runs and use tools for pages, images, paths, fonts, clipping, and path groups
+- Added authentication support and compatibility with ChatGPT-uploaded PDF workflows
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This release period introduces the API v3 SDK line, request-based text editing, improved layout and reflow, broader page and document operations, and expanded MCP workflows.
 
 ## Week of March 28 - April 2, 2026
 
