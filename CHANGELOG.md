@@ -1,11 +1,42 @@
 # PDFDancer Changelog
 
-*Last updated: July 24, 2026*
+*Last updated: July 30, 2026*
 
 Follow along with the latest improvements to PDFDancer. We ship updates frequently to make
 editing, inspecting, and automating PDF workflows feel first-class for developers.
 
-## PDFDancer v3 — July 24, 2026
+## Week of July 25-30, 2026
+
+### Python SDK (v3.0.2)
+
+**Structured Text Extraction**
+- Analyze the complete document or one page as semantic reading units
+- Receive classified text blocks with reading order, source-element provenance, page-space bounds, and relationships
+- Use `analyze_reading_units()` at document scope or `pdf.page(page_number).analyze_reading_units()` at page scope
+
+### TypeScript SDK (v3.0.1)
+
+**Structured Text Extraction**
+- Analyze the complete document or one page as semantic reading units
+- Receive classified text blocks with reading order, source-element provenance, page-space bounds, and relationships
+- Use `analyzeReadingUnits()` at document scope or `pdf.page(pageNumber).analyzeReadingUnits()` at page scope
+
+### Java SDK (v3.0.1)
+
+**Structured Text Extraction**
+- Analyze the complete document or one page as semantic reading units
+- Receive typed reading-unit records with reading order, source-element provenance, page-space bounds, and relationships
+- Use `analyzeReadingUnits()` at document or page scope
+
+**File Saving**
+- Saving to a bare filename such as `output.pdf` no longer fails when the path has no parent directory
+- Missing parent directories are created when a nested output path is used
+
+---
+
+**What's PDFDancer?** PDFDancer is a PDF manipulation platform with SDKs for Java, Python, and TypeScript. This week adds structured text extraction through semantic reading units across all three SDKs.
+
+## API v3 and Platform Updates (April 3 - July 24, 2026)
 
 PDFDancer v3 introduces a new editing model across Java, Python, and TypeScript. Text changes are
 expressed as explicit requests, layout behavior is selected per operation, and every text operation returns
